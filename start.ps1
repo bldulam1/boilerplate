@@ -1,4 +1,4 @@
-$env:PORT = 9000;
+$env:PORT = 5000;
 $env:GRAPHQL_PATH = "graphql"
 
 $env:DB_HOST = "localhost"

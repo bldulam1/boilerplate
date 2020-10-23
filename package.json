@@ -48,7 +48,7 @@
   },
   "scripts": {
     "lint": "npm run lint:js && npm run lint:ts",
-    "lint:js": "eslint --ext .js,.jsx --cache '**/*.{jsx,js}' --fix",
+    "lint:js": "eslint --ext .js,.jsx --cache **/*.{jsx,js} --fix",
     "lint:ts": "tslint -c tslint.json -p tslint-tsconfig.json --fix",
     "start:server": "cd server && ts-node-dev ./server.ts --respawn --transpileOnly && wait-on tcp:5000",
     "start:app": "react-scripts start",
@@ -77,10 +77,12 @@
   "lint-staged": {
     "*.{js,jsx}": [
       "prettier --write",
+      "eslint --color",
       "git add"
     ],
     "*.{ts,tsx}": [
       "prettier --write",
+      "tslint -c tslint.json -p tslint-tsconfig.json",
       "git add"
     ],
     "*.json": [

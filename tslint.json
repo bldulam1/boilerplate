@@ -10,7 +10,9 @@
     "no-implicit-dependencies": false,
     "prettier": true,
     "object-literal-sort-keys": false,
-    "ordered-imports": false
+    "ordered-imports": false,
+    "interface-name": false,
+    "interface-over-type-literal": false
   },
   "rulesDirectory": ["tslint-plugin-prettier"],
   "exclude": ["node_modules"],

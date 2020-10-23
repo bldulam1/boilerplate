@@ -49,5 +49,6 @@ yarn-debug.log*
 yarn-error.log*
 
 /src/datatypes/types.ts
+/server/datatypes/types.ts
 
 start.ps1
