@@ -28,8 +28,8 @@ import depthLimit from 'graphql-depth-limit'
 import express from 'express'
 import schema from './schema'
 
-const graphqlPath = 'graphql'
-const port = 5000
+const graphqlPath = process.env.GRAPHQL_PATH || 'graphql'
+const port = process.env.PORT
 
 const app = express()
 const server = new ApolloServer({
@@ -44,5 +44,6 @@ server.applyMiddleware({ app, path: `/${graphqlPath}` })
 
 const url = `http://localhost:${port}${server.graphqlPath}`
 const message = `\nGraphQL is now running on ${url}`
+
 // tslint:disable-next-line: no-console
 createServer(app).listen({ port }, () => console.log(message))

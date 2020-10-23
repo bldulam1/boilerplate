@@ -1,7 +1,5 @@
-import db from '../../app.database'
+import { knexClient } from '../../app.database'
 
 export default async function() {
-  const sql = 'select * from users'
-  const res = await db.promise().query(sql)
-  return res[0]
+  return knexClient.table('users').select('*')
 }

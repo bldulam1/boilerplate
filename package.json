@@ -10,6 +10,7 @@
     "apollo-server": "^2.18.2",
     "graphql": "^15.3.0",
     "graphql-depth-limit": "^1.1.0",
+    "knex": "^0.21.6",
     "mysql2": "^2.2.5",
     "react": "^16.8.2",
     "react-dom": "^16.8.2"
@@ -76,12 +77,10 @@
   "lint-staged": {
     "*.{js,jsx}": [
       "prettier --write",
-      "eslint --color",
       "git add"
     ],
     "*.{ts,tsx}": [
       "prettier --write",
-      "tslint -c tslint.json -p tslint-tsconfig.json",
       "git add"
     ],
     "*.json": [
@@ -91,7 +90,6 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "lint-staged"
     }
   }
