@@ -8,7 +8,9 @@
   "jsRules": {},
   "rules": {
     "no-implicit-dependencies": false,
-    "prettier": true
+    "prettier": true,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false
   },
   "rulesDirectory": ["tslint-plugin-prettier"],
   "exclude": ["node_modules"],

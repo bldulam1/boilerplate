@@ -1,5 +1,7 @@
-import React, { Component } from 'react'
 import './App.css'
+
+import React, { Component } from 'react'
+
 import logo from './logo.svg'
 
 class App extends Component {
@@ -34,6 +36,7 @@ class App extends Component {
     const body = await response.text()
     this.setState({ responseToPost: body })
   }
+
   public render() {
     return (
       <div className="App">

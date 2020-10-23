@@ -1,0 +1,8 @@
+schema: ./server/schema.graphql
+generates:
+  ./src/datatypes/types.ts:
+    plugins:
+      - typescript
+  ./server/datatypes/types.ts:
+    plugins:
+      - typescript
