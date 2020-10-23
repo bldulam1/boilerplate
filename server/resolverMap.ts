@@ -6,8 +6,8 @@ import {
 import { getPhoto, getPhotos } from './resolvers/photos/photos.queries'
 
 import { IResolvers } from 'graphql-tools'
-import createUser from './resolvers/users/createUser'
-import getUsers from './resolvers/users/getUsers'
+import { createUser } from './resolvers/users/users.mutation'
+import { getUsers } from './resolvers/users/users.query'
 
 const resolverMap: IResolvers = {
   Query: {

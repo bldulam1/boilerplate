@@ -1,6 +1,6 @@
 {
-  "name": "create-react-app-express-typescript",
-  "description": "A CRA app with Express dev server",
+  "name": "cra-graphql-codegen-typescript",
+  "description": "A CRA app with GraphQL dev server",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -5,11 +5,9 @@ import { knexClient } from '../../app.database'
 
 const USERS_TABLE = 'users'
 
-export default async (
+export const createUser = async (
   _: void,
   args: User,
   ctx: Context,
   info: GraphQLResolveInfo
-) => {
-  return knexClient.table(USERS_TABLE).insert(args)
-}
+) => knexClient.table(USERS_TABLE).insert(args)

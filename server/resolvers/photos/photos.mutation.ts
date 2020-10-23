@@ -2,7 +2,6 @@ import { Context } from '../../models'
 import { GraphQLResolveInfo } from 'graphql'
 import { PHOTOS_TABLE } from '.'
 import { Photo } from '../../datatypes/types'
-import { ResultSetHeader } from 'mysql2'
 import { knexClient } from '../../app.database'
 
 export const createPhoto = async (
