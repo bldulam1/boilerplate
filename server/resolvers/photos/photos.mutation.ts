@@ -1,6 +1,6 @@
 import { Context } from '../../models'
 import { GraphQLResolveInfo } from 'graphql'
-import { PHOTOS_TABLE } from '.'
+import { PHOTOS_TABLE } from './photos.schema'
 import { Photo } from '../../datatypes/types'
 import { knexClient } from '../../app.database'
 
